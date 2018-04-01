@@ -24,7 +24,7 @@ public class ClientControllerTest extends TestCase {
         System.out.println(client.idClient.equals("12"));
         assert (client.idClient.equals("12"));
 		con.AddClient(client.Name, client.Address, client.idClient);
-		assertEquals(0, con._dataManager.Clients.size());
+		assertEquals(1, con._dataManager.Clients.size());
 		System.out.println(client.toString());
     }
 
@@ -47,7 +47,7 @@ public class ClientControllerTest extends TestCase {
         System.out.println(issue.Paid == 200);
         assert (issue.Paid == 200);
         con.AddClientIndex(issue.Client, issue.Year, issue.Month, issue.ToPay);
-        assertEquals(0, con._dataManager.Issues.size());
+        assertEquals(1, con._dataManager.Issues.size());
         System.out.println(issue.toString());
     }
 }
