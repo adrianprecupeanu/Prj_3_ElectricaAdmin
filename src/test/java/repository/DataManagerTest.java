@@ -7,6 +7,7 @@ import junit.framework.TestCase;
  */
 public class DataManagerTest extends TestCase {
     public void testSaveChanges() throws Exception {
+        assertTrue(true);
     }
 
     public void testGetInvoicesList() throws Exception {
