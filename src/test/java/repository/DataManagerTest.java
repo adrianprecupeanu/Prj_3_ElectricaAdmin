@@ -9,11 +9,4 @@ public class DataManagerTest extends TestCase {
     public void testSaveChanges() throws Exception {
         assertTrue(true);
     }
-
-    public void testGetInvoicesList() throws Exception {
-    }
-
-    public void testGetClientsList() throws Exception {
-    }
-
 }

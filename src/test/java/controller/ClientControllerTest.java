@@ -7,12 +7,10 @@ import junit.framework.TestCase;
  */
 public class ClientControllerTest extends TestCase {
     public void testAddClient() throws Exception {
+        assertTrue(true);
     }
 
     public void testAddClientIndex() throws Exception {
+        assertTrue(true);
     }
-
-    public void testListIssue() throws Exception {
-    }
-
 }
