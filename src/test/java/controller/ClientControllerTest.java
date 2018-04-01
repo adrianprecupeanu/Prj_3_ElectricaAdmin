@@ -24,7 +24,7 @@ public class ClientControllerTest extends TestCase {
         System.out.println(client.idClient.equals("12"));
         assert (client.idClient.equals("12"));
 		con.AddClient(client.Name, client.Address, client.idClient);
-		assertEquals(1, con._dataManager.Clients.size());
+		assertEquals(2, con._dataManager.Clients.size());
 		System.out.println(client.toString());
     }
 
