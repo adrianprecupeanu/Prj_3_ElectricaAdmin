@@ -34,12 +34,12 @@ public class ClientControllerTest extends TestCase {
 
         ClientController con = new ClientController();
         assertEquals(0, con._dataManager.Issues.size());
-        Issue issue = new Issue("5", 2018, 8, 400, 200);
+        Issue issue = new Issue("5", 2012, 8, 400, 200);
 
         System.out.println(issue.Client.equals("5"));
         assert (issue.Client.equals("5"));
-        System.out.println(issue.Year == 2018);
-        assert (issue.Year == 2018);
+        System.out.println(issue.Year == 2012);
+        assert (issue.Year == 2012);
         System.out.println(issue.Month == 8);
         assert (issue.Month == 8);
         System.out.println(issue.ToPay == 400);
