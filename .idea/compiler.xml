@@ -10,7 +10,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="Prj_3_ElectricaAdmin" target="1.5" />
+      <module name="Prj_3_ElectricaAdmin" target="1.6" />
     </bytecodeTargetLevel>
   </component>
 </project>
