@@ -14,7 +14,7 @@ public class ClientControllerTest extends TestCase {
         System.out.println("\nT E S T   >>  Add New Product\n");
 
         ClientController con = new ClientController();
-        assertEquals(1, con._dataManager.Clients.size());
+        assertEquals(2, con._dataManager.Clients.size());
         Client client = new Client("L", "l1", "12");
 
         System.out.println(client.Name.equals("L"));
