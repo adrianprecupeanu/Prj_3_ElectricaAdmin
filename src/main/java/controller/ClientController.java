@@ -6,15 +6,7 @@ import repository.DataManager;
 import model.*;
 
 public class ClientController {
-    public DataManager dataManager() {
-        return _dataManager;
-    }
-
-    public void dataManager(DataManager _dataManager) {
-        this._dataManager = _dataManager;
-    }
-
-    private DataManager _dataManager;
+    public DataManager _dataManager;
 
     public ClientController(){
         _dataManager = new DataManager();

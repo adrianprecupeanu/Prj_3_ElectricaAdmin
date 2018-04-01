@@ -14,7 +14,7 @@ public class ClientControllerTest extends TestCase {
         System.out.println("\nT E S T   >>  Add New Product\n");
 
         ClientController con = new ClientController();
-        assertEquals(0, con.dataManager().Clients.size());
+        assertEquals(0, con._dataManager.Clients.size());
         Client client = new Client("L", "l1", "12");
 
         System.out.println(client.Name.equals("L"));
@@ -24,7 +24,7 @@ public class ClientControllerTest extends TestCase {
         System.out.println(client.idClient.equals("12"));
         assert (client.idClient.equals("12"));
 		con.AddClient(client.Name, client.Address, client.idClient);
-		assertEquals(1, con.dataManager().Clients.size());
+		assertEquals(1, con._dataManager.Clients.size());
 		System.out.println(client.toString());
     }
 
@@ -33,7 +33,7 @@ public class ClientControllerTest extends TestCase {
         System.out.println("\nT E S T   >>  Add New Issue\n");
 
         ClientController con = new ClientController();
-        assertEquals(0, con.dataManager().Issues.size());
+        assertEquals(0, con._dataManager.Issues.size());
         Issue issue = new Issue("5", 2018, 8, 400, 200);
 
         System.out.println(issue.Client.equals("5"));
@@ -47,7 +47,7 @@ public class ClientControllerTest extends TestCase {
         System.out.println(issue.Paid == 200);
         assert (issue.Paid == 200);
         con.AddClientIndex(issue.Client, issue.Year, issue.Month, issue.ToPay);
-        assertEquals(1, con.dataManager().Issues.size());
+        assertEquals(1, con._dataManager.Issues.size());
         System.out.println(issue.toString());
     }
 }
