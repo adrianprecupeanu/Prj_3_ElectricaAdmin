@@ -73,6 +73,6 @@ public class ClientControllerTest extends TestCase {
         Issue issue = new Issue("12", 2012, 8, 400, 200);
         String result = con.ListIssue("12");
         assert (result.equals("L, l1, 12"));
-        System.out.println(issue.toString());
+        System.out.println(result);
     }
 }
