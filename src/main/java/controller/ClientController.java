@@ -94,7 +94,7 @@ public class ClientController {
                 System.out.println(pen);
             }
         }
-        return null;
+        return pen;
     }
 
 }
